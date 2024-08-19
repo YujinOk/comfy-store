@@ -3,5 +3,12 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    // Duplicated in tsconfig.app.json
+    // Necessary due to a quirk of shadcn
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
