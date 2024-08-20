@@ -3,7 +3,7 @@ import { CartButton, LinksDropdown, Logo, ModeToggle, NavLinks } from ".";
 const Navbar = () => {
   return (
     <nav className="bg-muted py-4">
-      <div className="align-element flex justify-between items-center">
+      <div className="align-element flex justify-between items-center md:gap-4">
         <Logo />
         <LinksDropdown />
         <NavLinks />

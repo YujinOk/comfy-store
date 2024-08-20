@@ -15,3 +15,4 @@ export { default as ProductsContainer } from "./ProductsContainer";
 export { default as PaginationContainer } from "./PaginationContainer";
 export { default as ProductsList } from "./ProductsList";
 export { default as ErrorElement } from "./ErrorElement";
+export { default as Loading } from "./Loading";
