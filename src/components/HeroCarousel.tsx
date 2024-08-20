@@ -13,29 +13,30 @@ import hero3 from "../assets/hero3.webp";
 import hero4 from "../assets/hero4.webp";
 
 const carouselImages = [hero1, hero2, hero3, hero4];
-const HeroCarousel = () => {
+
+function HeroCarousel() {
   return (
     <div className="hidden lg:block">
-      <CarouselContent>
-        {carouselImages.map((image, index) => {
-          return (
+      <Carousel>
+        <CarouselContent>
+          {carouselImages.map((image, index) => (
             <CarouselItem key={index}>
               <Card>
                 <CardContent className="p-2">
                   <img
                     src={image}
                     alt="hero"
-                    className="w-full h-[24rem] rounded-md object-cover"
+                    className="w-full h-[24rem]  rounded-md object-cover"
                   />
                 </CardContent>
               </Card>
             </CarouselItem>
-          );
-        })}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   );
-};
+}
 export default HeroCarousel;
